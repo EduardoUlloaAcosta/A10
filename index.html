@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cookie Example</h1>
+  <button onclick="setCookie()">Set Cookie</button>
+  <button onclick="displayCookie()">Display Cookie</button>
+  <p id="cookieDisplay"></p>
+  
+  <script>
+    function setCookie() {
+      document.cookie = "username=Eduardo Ulloa Acosta; expires=Fri, 31 Dec 2024 23:59:59 UTC; path=/";
+      alert("Cookie has been set!");
+    }
+
+    function displayCookie() {
+      document.getElementById("cookieDisplay").innerText = document.cookie || "No cookies found";
+    }
+  </script>
+</body>
+<footer>&copy; Eduardo Ulloa Acosta, November 19, 2024</footer>
+</html>
